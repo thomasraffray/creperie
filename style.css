@@ -1,7 +1,7 @@
 /*pour les polices*/
 @font-face {
     font-family: "Loobster2";
-    src: url("Font/Lobster_Two/LobsterTwo-Bold.ttf");
+    src: url("Font/Lobster_Two/LobsterTwo-Bold.ttf") format('truetype');
 }
 
 /*s'applique pour toute la page*/
