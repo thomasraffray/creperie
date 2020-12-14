@@ -1,8 +1,5 @@
-/*pour les polices*/
-@font-face {
-    font-family: "Loobster2";
-    src: url("Font/Lobster_Two/LobsterTwo-Bold.ttf") format('truetype');
-}
+
+
 
 /*s'applique pour toute la page*/
 *{
@@ -10,7 +7,9 @@
 }
 
 h1,h2{
-    font-family: 'Loobster2', sans-serif;
+    
+    /*font-family: 'Lobster2', cursive;*/  /* pour police internet*/
+    font-family: 'Lobster Two', sans-serif;
 }
 
 h1{
@@ -21,26 +20,28 @@ h2{
     font-size: 1.6rem;
 }
 
+p{
+    line-height: 1.2rem;
+}
+
+
 
 /*_______________________________________________________*/
 /*barre de navigation*/
 /*style hyperline*/
-header a{
+nav a{
     text-decoration: none;
     color: white;
 }
 
 
-header a:hover{
+nav a:hover{
     text-decoration: underline;
     color: white;
     background-color: #8f1d1d;
 }
 
-footer a:hover{
-    text-decoration: underline;
-    color: black;
-}
+
 
 nav{
     border-bottom: 3px solid #8f1d1d;
@@ -80,12 +81,110 @@ nav a{
 @media screen and (min-width: 1024px ){
     #intro2{
         font-size: 4rem;    
-        text-align: center;
+        text-align: center center;
         padding: 10%;
         font-size: 5rem;
         text-shadow: 1px 1px 2px black;
     }
 }
+/* ________message gouvernement _______*/
+@media screen and (min-width: 1024px ){
+    .annonce_gouv{
+        text-align: center;
+        color: black;
+        background-color: red;
+        margin-top: 10px;
+        margin-left: 30%;
+        margin-right: 30%;
+        border-width: 1em;
+        border-radius: 15px;
+        border: 10px solid red;
+        
+    }
+}
+
+.annonce_gouv{
+    text-align: center;
+    color: black;
+    background-color: red;
+    margin-top: 10px;
+    border-width: 1em;
+    border-radius: 15px;
+    border: 10px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.annonce_gouv a {
+    text-decoration: none;
+    color: white
+}
+
+.annonce_gouv h3{
+    font-family: 'Lobster Two', sans-serif;
+}
+
+.annonce_gouv i{
+    color: white;
+    font-size: 5rem;
+}
+
+
+/*__________barre haut ________*/
+#barre_haut{
+    text-align: center;
+    color: black;
+    padding-top: 0.5rem;
+}
+
+#barre_haut i{
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #5b5858;
+}
+
+#barre_haut a ,#barre_haut p {
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    margin: 10%;
+}
+
+@media screen and (min-width: 768px){
+    /*#barre_haut{
+        display: flex;
+        justify-content: space-between;  
+    }*/
+    #barre_haut {
+        display: table;
+    }
+
+    #barre_haut article, #barre_haut aside {
+        display: table-cell;
+        vertical-align: middle;
+        width: 10%;
+    }
+}
+
+
+
+.act1, .act5{
+    background-color: #d8d5d5;
+    text-align: center;
+}
+
+.act2, .act4{
+    background-color: #b5afaf;
+    text-align: center;
+}
+
+.act3 {
+    background-color: #d8d5d5;
+    text-align: center;
+}
+
+
 /*________________________________________________________*/
 /*début du main*/
 
@@ -98,7 +197,7 @@ hr{
     color: #8f1d1d;
 }
 
-/*philosophie*/
+/*_________philosophie______________________*/
 @media screen and (min-width: 768px){
     #philo{
         text-align: center;
@@ -125,7 +224,8 @@ hr{
 }
 
 #philo img{
-    width: 100%;    
+    width: 100%; 
+    align-items: stretch;   
 }
 /* ___________nous ________________*/
 @media screen and (min-width: 768px){
@@ -155,6 +255,153 @@ hr{
     bottom: 10%; 
 }
 
+/*_____________________galettes crepes__________________*/
+@media screen and (min-width: 768px){
+    #galettes{
+        display: flex;
+        justify-content: space-around;   
+    }
+    
+     #galettes{
+        flex-basis:50%;
+    }
+}
+
+#galettes h1{
+    font-size: 3rem;
+    color: #8f1d1d;
+    text-align: center;
+}
+
+#galettes img{
+    width: 100%;    
+}
+
+/*_________download_________________*/
+#download{
+    text-align: center;
+}
+#download a{
+    background-color: #8f1d1d;
+    border: 15px solid #8f1d1d;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+/*________vente a emporter_________________*/
+#vente h1{
+    font-size: 3rem;
+    color: #8f1d1d;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    #vente{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+#vente {
+    text-align: center;
+}
+
+#horraires i {
+    font-size: 2.5rem;
+    color: #634f4f;
+}
+
+#horraires{
+    background-color: #b5afaf;
+    border: 10px solid #b5afaf;
+    border-radius: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.2rem;
+}
+
+#vente article a{
+    text-decoration: underline;
+    color: #8f1d1d;
+}
+
+/*___________Soirées a thèmes_________________________*/
+@media screen and (min-width: 768px){
+    #soirées h1{
+        font-size: 3rem;
+        color: #8f1d1d;
+        text-align: center;
+    }
+    #soirées p,#soirées h3{
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    #soirées a{
+        color: #8f1d1d;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+#soirées h3{
+    text-align: center;
+    font-family: 'Lobster Two', sans-serif;
+
+}
+
+#soirées h1{
+    font-size: 3rem;
+    color: #8f1d1d;
+    text-align: center;
+}
+#soirées p{
+    text-align: center;
+}
+
+#soirées a{
+    color: #8f1d1d;
+    text-align: center;
+}
+
+/*_____________________partenaires__________________*/
+#partenaires0 h1 {
+    text-align: right;
+    color: #8f1d1d;
+    font-size: 3rem;
+}
+#partenaires0 h2{
+    color: black;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px){
+    #partenaires{
+        display: flex;
+        text-align: center;
+    }
+
+    #partenaire aside{
+        flex: 1 1 auto;
+        margin-bottom: 10px;
+    }
+    #partenaire article{
+        flex: 1 1 auto;
+    }
+}
+
+#partenaires a{
+    color: #8f1d1d;
+}
 /*_____________________________________________________________*/
 /*footer*/
 footer{
@@ -187,6 +434,11 @@ footer address{
      #bas article{
         flex-basis: 50%;
     }
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: black;
 }
 
 #bas a{
@@ -222,9 +474,6 @@ iframe{
     padding: 0.2rem;
 }
 
-footer a{
-    
-}
 /*_________________________________________________________*/
 /*pour l'impression sans le header le et footer*/
 @media print{
