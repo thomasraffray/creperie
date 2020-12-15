@@ -311,6 +311,11 @@ hr{
     text-align: center;
 }
 
+#vente img{
+    width : 280px; 
+    height: 170px;
+}
+
 #horraires i {
     font-size: 2.5rem;
     color: #634f4f;
@@ -346,8 +351,6 @@ hr{
     #soirées a{
         color: #8f1d1d;
         text-align: center;
-        margin-left: 25%;
-        margin-right: 25%;
     }
 }
 
@@ -373,7 +376,7 @@ hr{
 
 /*_____________________partenaires__________________*/
 #partenaires0 h1 {
-    text-align: right;
+    text-align: center;
     color: #8f1d1d;
     font-size: 3rem;
 }
@@ -392,7 +395,6 @@ hr{
 
     #partenaire aside{
         flex: 1 1 auto;
-        margin-bottom: 10px;
     }
     #partenaire article{
         flex: 1 1 auto;
