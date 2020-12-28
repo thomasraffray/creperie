@@ -454,28 +454,26 @@ hr{
     text-align: center;
 }
 
-
-@media screen and (min-width: 768px){
-    #part{
-        display: flex;
-        justify-content: space-around;    
-    }
-    #port{
-        display: flex;
-        justify-content: space-around;    
-    }
-}
-
-#part a, #port a{
-    color: #8f1d1d;
-}
-
-#part, #port{
-    display: flex;
+#un , #deux{
     text-align: center;
 }
 
-#part img:hover, #port img:hover{
+#un a, #deux a {
+    color: #8f1d1d;
+}
+
+@media screen and (min-width: 768px){
+    #un{
+        display: flex;
+        justify-content: space-around;
+    }
+    #deux{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+#un img:hover, #deux img:hover{
     transform: scale(1.1); 
     transition: 2s;
 }
