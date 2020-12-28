@@ -128,8 +128,8 @@ nav a{
 }
 
 .annonce_gouv:hover{
-    transform: scale(1.1);
-    transition: 2s;
+    transform: scale(1.05);
+    transition: 4s;
 }
 
 .annonce_gouv a {
@@ -252,11 +252,11 @@ hr{
     align-items: stretch;   
 }
 
-#philo img:hover{
+/*#philo img:hover{
     transition: 5s;
     transform: translate(-50px);
 
-}
+}*/
 /* ___________nous ________________*/
 @media screen and (min-width: 768px){
     #nous{
@@ -285,11 +285,11 @@ hr{
     bottom: 10%; 
 }
 
-#nous img:hover{
+/*#nous img:hover{
     transition: 5s;
     transform: translate(50px);
 
-}
+}*/
 
 /*_____________________galettes crepes__________________*/
 @media screen and (min-width: 768px){
@@ -313,10 +313,10 @@ hr{
     width: 100%;    
 }
 
-#galettes img:hover{
+/*#galettes img:hover{
     transform: scale(1.1);
     transition: 5s;
-}
+}*/
 
 /*_________download_________________*/
 #download{
