@@ -24,14 +24,17 @@ p{
     line-height: 1.2rem;
 }
 
+hr{
+    color: #8f1d1d;
+}
+
 /*_______________________________________________________*/
 /*barre de navigation*/
 /*style hyperline*/
 nav a{
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
-    
+    font-size: 1.1rem;  
 }
 
 
@@ -117,21 +120,21 @@ nav a{
 .annonce_gouv{
     text-align: center;
     color: black;
-    background-color: red;
+    background-color: #8f1d1d;
     margin-top: 10px;
     border-width: 1em;
     border-radius: 15px;
-    border: 10px solid red;
+    border: 10px solid #8f1d1d;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.annonce_gouv:hover{
+/*.annonce_gouv:hover{
     transform: scale(1.05);
     transition: 4s;
 }
-
+*/
 .annonce_gouv a {
     text-decoration: none;
     color: white
@@ -217,10 +220,6 @@ main{
     margin-right: 7%;
 }
 
-hr{
-    color: #8f1d1d;
-}
-
 /*_________philosophie______________________*/
 @media screen and (min-width: 768px){
     #philo{
@@ -252,11 +251,11 @@ hr{
     align-items: stretch;   
 }
 
-/*#philo img:hover{
+#philo:hover img{
     transition: 5s;
-    transform: translate(-50px);
+    transform: translate(-20px);
 
-}*/
+}
 /* ___________nous ________________*/
 @media screen and (min-width: 768px){
     #nous{
@@ -285,11 +284,11 @@ hr{
     bottom: 10%; 
 }
 
-/*#nous img:hover{
+#nous:hover img{
     transition: 5s;
-    transform: translate(50px);
+    transform: translate(20px);
 
-}*/
+}
 
 /*_____________________galettes crepes__________________*/
 @media screen and (min-width: 768px){
@@ -532,7 +531,7 @@ footer a:hover{
 }
 
 #basdepage2 a:hover{
-    text-decoration: black;
+    color: #8f1d1d;
 }
 
 /*pour la carte*/
@@ -548,6 +547,20 @@ iframe{
     color: Black;
     padding: 0.2rem;
 }
+
+/*______________Mentions légales_____________________*/
+#mentions h1{
+    color: #8f1d1d;
+    text-align: center;
+    font-size: 3rem;
+}
+#mentions h2{
+    color: black;
+    text-align: left;
+    font-size: 2rem;
+}
+
+
 
 /*_________________________________________________________*/
 /*pour l'impression sans le header le et footer*/
